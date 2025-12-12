@@ -1,24 +1,25 @@
 package Arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class lab_2 {
+public class Main {
     public static void main(String[] args) {
            Scanner scanner=new Scanner(System.in);
         Array arr =new Array();
         int []numbers={1,2,3,4,5};
-        System.out.println("enter number to search:");
-        int value=scanner.nextInt();
+        arr.shiftLeftDelete(numbers,1);
+        arr.traversal(numbers);
+        //System.out.println("enter number to search:");
+        //int value=scanner.nextInt();
 
         //  arr.update(numbers,3,7);
         //  arr.delete(numbers,3);
         // int result= arr.LinearSearch(numbers,2);
-        int result=arr.BinarySearch(numbers,0,5,value);
-        if(result!=-1)
-            System.out.println("your value found at index :"+result);
-        else
-            System.out.println("index not found");
+//        int result=arr.BinarySearch(numbers,0,5,value);
+//        if(result!=-1)
+//            System.out.println("your value found at index :"+result);
+//        else
+//            System.out.println("index not found");
 
 
 

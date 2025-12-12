@@ -48,6 +48,14 @@ public class Array {
             a[index]=0;
 
     }
+    public void shiftLeftDelete(int []a, int index){
+        for (int i=index; i< a.length-1;i++)
+            a[i]=a[i+1];
+
+
+        a[a.length-1]=Integer.MIN_VALUE;
+
+    }
     //{1,2,3,4}  //2
     public int LinearSearch(int []a, int value){
         for(int i=0; i<a.length-1;i++){
@@ -59,6 +67,8 @@ public class Array {
 
 
     }
+
+
 
     public int BinarySearch(int []a,int findex,int lindex,int value)
     {
