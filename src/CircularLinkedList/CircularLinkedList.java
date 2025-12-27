@@ -69,7 +69,17 @@ public E removeLast(){
         }
 size--;
 return delete;}
-
+public void display(){
+    if (isEmpty()){
+        System.out.println("List is empty");
+        return;}
+    Node<E>temp=tail.getNext();
+    do {
+        System.out.print(temp.getData()+"---->");
+        temp=temp.getNext();
+    }while (temp!=tail.getNext());
+    System.out.println("go first ("+temp.getData()+")");
+}
 
 
 class Node<E>{
