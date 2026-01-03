@@ -1,4 +1,4 @@
-package DoublyLinkedList;
+package Stack;
 
 public class DoublyLinkedList<E> {
 private Node<E> head;
