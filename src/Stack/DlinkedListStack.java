@@ -1,9 +1,9 @@
 package Stack;
 
-import SinglyLinkedList.SinglyLinkedList;
+import DoublyLinkedList.DoublyLinkedList;
 
-public class SlinkedListStack<E> implements Stack<E> {
-   SinglyLinkedList<E> slist=new SinglyLinkedList<E>();
+public class DlinkedListStack<E> implements Stack<E> {
+    DoublyLinkedList<E> slist=new DoublyLinkedList<E>();
 
     @Override
     public boolean isEmpty() {
@@ -28,7 +28,7 @@ public class SlinkedListStack<E> implements Stack<E> {
         return slist.removeFirst();
     }
 
-  //  @Override
+//    @Override
 //    public void display() {
 //        slist.display();
 //    }

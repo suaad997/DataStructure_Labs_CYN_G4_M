@@ -2,7 +2,7 @@ package Stack;
 
 public class Main {
     public static void main(String[] args) {
-        SlinkedListStack<Integer> slStack=new SlinkedListStack<Integer>();
+        DlinkedListStack<Integer> slStack=new DlinkedListStack<Integer>();
         slStack.push(10);
         slStack.push(20);
         slStack.push(30);

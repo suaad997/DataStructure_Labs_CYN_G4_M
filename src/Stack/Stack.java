@@ -6,7 +6,6 @@ public interface Stack<E> {
     public void push(E data);
     public E peek();
     public E pop();
-//    public void display();
 
 
 }
